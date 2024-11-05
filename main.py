@@ -1,20 +1,14 @@
-#1. Desarrolle el código fuente de un programa que permita calcular el área de un triángulo equilátero, adicional visualizar `"DATOS NO VÁLIDOS"`, si el área es mayor a 1000.
-#
-#  La fórmula para calcular el área `A` de un triángulo equilátero de lado `a` es:
-#
-#
-#   ![](https://i.ibb.co/PTy9hV9/image.png)
-#A=((Raiz de 3)/4)xaElevado a la 2
-#   **Explicación**:
-#
-#   - Un triángulo equilátero tiene todos sus lados iguales, y sus ángulos interiores son todos de 60 grados.
-#   - Esta fórmula se deriva usando trigonometría y geometría básica aplicadas a un triángulo equilátero.
-import math
-side = float(input("""In this program i'l calculate the area of a equilateral triangle
-Please enter the side of any side of the triangle: """))
-area = math.triangle(side)
-unvalidData =0
-if area > 1000:
-    print("unvalid Data")
-else:
-    print(f"The area of the triangle is: {area}")
+#Desarrolle un programa que solicite ingrese tres voltajes distintos e indique si el promedio de los voltajes ingresados es menor a 115 visualice
+# `"VOLTAJE CORRECTO"`, caso contrario sea mayor a 115 y menor a 220 visualice `"ALTO VOLTAJE"`, y si es mayor a 220 visualice `"PELIGRO"`.
+
+Voltage1 =int(input("""In this program i'l calculate the average voltage and say you if the voltage is the correct voltage, high voltage or danger
+Please enter the first voltage: """)) 
+Voltage2 =int(input("Please enter the second voltage: "))
+Voltage3 =int(input("Please enter the third voltage: "))
+average = ((Voltage1 + Voltage2 + Voltage3)/3)
+if average >=220:
+    Print("Danger")
+    elif average >=115 and average<220:
+        Print("High voltage")
+    else:
+        Print("Correct voltage")
